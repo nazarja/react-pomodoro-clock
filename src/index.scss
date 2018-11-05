@@ -1,0 +1,141 @@
+/*******************************
+    Google Fonts
+*******************************/
+@import url('https://fonts.googleapis.com/css?family=Expletus+Sans|Oswald');
+
+/*******************************
+    Variables
+*******************************/
+$red: #A61510;
+$green: #65962D;
+$black: #222222;
+$transition: 0.4s;
+$white: #fff;
+
+/*******************************
+    General
+*******************************/
+body {
+  margin: 0;
+  padding: 0;
+  color: $white;
+  font-family: 'Oswald', sans-serif;
+  background-color: $red;
+  text-align: center;
+}
+a {
+  color: $green;
+  text-decoration: none;
+  transition: $transition;
+  &:hover {
+    color: $red;
+  }
+}
+
+
+/*******************************
+   Header
+*******************************/
+#header {
+  background-color: $black;
+  width: 100vw;
+  margin: 0;
+  padding: 25px;
+  box-sizing: border-box;
+
+    h1 {
+      margin: 0;
+      padding: 5px;
+    }
+    
+    div {
+      display: inline-block;
+      padding: 5px 20px;
+
+      p {
+        font-size: 1.1em;
+        padding: 5px;
+        margin: 0;
+      }
+      
+      i {
+        font-size: 1.6em;
+        padding: 9px 10px;
+        cursor: pointer;
+        color: $green;
+        transition: $transition;
+        opacity: 0.9;
+
+          &:hover {
+            color: $white;
+            opacity: 1;
+          }
+      }
+    } 
+}
+
+
+/*******************************
+   Bar
+*******************************/
+#bar {
+  height: 5vh;
+  width: 100vw;
+  background-color: $green;
+  box-shadow: 1px 1px 20px 1px $black;
+}
+
+
+/*******************************
+   Timer
+*******************************/
+#timer {
+  padding-top: 40px;
+  h2 {
+      font-weight: lighter;
+  }
+  #time-left {
+    padding: 0 5px;
+    font-size: 5em;
+      span {
+        padding: 0 5px;
+      }
+  }
+  #timer-controls {
+    i {
+      display: inline-block;
+      padding: 20px 10px;
+      font-size: 2em; 
+      opacity: 0.5;
+      transition: $transition;
+      cursor: pointer;
+        &:hover {
+          opacity: 1;
+        }
+    }
+
+  }
+}
+
+
+/*******************************
+   Footer
+*******************************/
+footer {
+  background-color: $black;
+  margin-top: 40px;
+  padding: 15px;
+  width: calc(100vw - 30px);
+}
+
+/*******************************
+   Media
+*******************************/
+@media (min-height: 660px) {
+  footer {
+    position: fixed;
+    margin-top: 0;
+    top: calc(100vh - 80px);
+    left: 0;
+  }
+}

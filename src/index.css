@@ -1,0 +1,104 @@
+/*******************************
+    Google Fonts
+*******************************/
+@import url("https://fonts.googleapis.com/css?family=Expletus+Sans|Oswald");
+/*******************************
+    Variables
+*******************************/
+/*******************************
+    General
+*******************************/
+body {
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  font-family: 'Oswald', sans-serif;
+  background-color: #A61510;
+  text-align: center; }
+
+a {
+  color: #65962D;
+  text-decoration: none;
+  transition: 0.4s; }
+  a:hover {
+    color: #A61510; }
+
+/*******************************
+   Header
+*******************************/
+#header {
+  background-color: #222222;
+  width: 100vw;
+  margin: 0;
+  padding: 25px;
+  box-sizing: border-box; }
+  #header h1 {
+    margin: 0;
+    padding: 5px; }
+  #header div {
+    display: inline-block;
+    padding: 5px 20px; }
+    #header div p {
+      font-size: 1.1em;
+      padding: 5px;
+      margin: 0; }
+    #header div i {
+      font-size: 1.6em;
+      padding: 9px 10px;
+      cursor: pointer;
+      color: #65962D;
+      transition: 0.4s;
+      opacity: 0.9; }
+      #header div i:hover {
+        color: #fff;
+        opacity: 1; }
+
+/*******************************
+   Bar
+*******************************/
+#bar {
+  height: 5vh;
+  width: 100vw;
+  background-color: #65962D;
+  box-shadow: 1px 1px 20px 1px #222222; }
+
+/*******************************
+   Timer
+*******************************/
+#timer {
+  padding-top: 40px; }
+  #timer h2 {
+    font-weight: lighter; }
+  #timer #time-left {
+    padding: 0 5px;
+    font-size: 5em; }
+    #timer #time-left span {
+      padding: 0 5px; }
+  #timer #timer-controls i {
+    display: inline-block;
+    padding: 20px 10px;
+    font-size: 2em;
+    opacity: 0.5;
+    transition: 0.4s;
+    cursor: pointer; }
+    #timer #timer-controls i:hover {
+      opacity: 1; }
+
+/*******************************
+   Footer
+*******************************/
+footer {
+  background-color: #222222;
+  margin-top: 40px;
+  padding: 15px;
+  width: calc(100vw - 30px); }
+
+/*******************************
+   Media
+*******************************/
+@media (min-height: 660px) {
+  footer {
+    position: fixed;
+    margin-top: 0;
+    top: calc(100vh - 80px);
+    left: 0; } }
